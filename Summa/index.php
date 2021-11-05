@@ -26,7 +26,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h1 class="text-center text-bold mt-4x">Mathy Knaapen – Technische dienstverlening - Hoi</h1>
+                    <h1 class="text-center text-bold mt-4x">Mathy Knaapen – Technische dienstverlening</h1>
                     <h3 class="text-center text-bold mt-4x">Maak uw keuze</h3>
                     <div class="well row pt-2x pb-3x bk-light">
                         <div class="col-sm" style="align-content: center">
