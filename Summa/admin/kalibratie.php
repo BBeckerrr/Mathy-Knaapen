@@ -136,7 +136,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 <!--                                -->
                                 <div class="panel panel-default">
-                                    <div class="panel-heading">Function</div>
+                                    <div class="panel-heading">Function / Event</div>
                                     <div class="panel-body">
                                         <div class="row">
                                             <div class="col-6 col-sm-3">
@@ -162,7 +162,30 @@ if (strlen($_SESSION['alogin']) == 0) {
                                                     <input type="email" class="form-control" id="floatingInputValue" placeholder="50008784" value="">
                                                 </form>
                                             </div>
+
                                             <div class="col-6 col-sm-3">
+                                                <form class="form-floating">
+                                                    <label for="floatingInputValue">Calibration Date</label>
+                                                    <input type="date" name="date" id="date" class="form-control" onchange="var chooseDate=new Date(this.value);
+                                                    // var days = document.getElementById('textbox2').value;
+                                                    chooseDate.setDate(chooseDate.getUTCDate()+10);
+                                                    var futureDate=chooseDate.getFullYear()+'-'+('0'+(chooseDate.getMonth()+1)).slice(-2)+'-'+('0'+(chooseDate.getDate())).slice(-2);alert(futureDate);
+                                                    var date2 = document.getElementById('date2');
+                                                    date2.value = futureDate;
+" >
+                                                </form>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <form class="form-floating">
+                                                    <label for="floatingInputValue">Days</label>
+                                                    <input type="text" name="textbox2" id="textbox2" />
+                                                </form>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <form class="form-floating">
+                                                    <label for="floatingInputValue">Due Date</label>
+                                                    <input type="Date" name="date2" class="form-control" id="date2" placeholder="$futureDate" value="" readonly="true">
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
